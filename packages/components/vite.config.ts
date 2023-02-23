@@ -20,7 +20,7 @@ export default defineConfig({
       // external: ['vue'],
       //忽略打包vue文件
       external: ['vue', /\.less/, '@kitty-ui/utils'],
-      input: ['src/index.ts'],
+      input: ['index.ts'],
       output: [{
         format: 'es',
         // 不用打包成 .es.js, 这里我们想把它打包成 .js
