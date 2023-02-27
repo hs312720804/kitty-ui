@@ -1,11 +1,13 @@
 <template>
-  <button>
-    测试按钮
+  <button class="k-button">
+    测试按钮rrr
   </button>
 </template>
 
-<script lang="ts" >
-  export default {
-    name: 'kButton'
-  }
+<script lang="ts">
+import './style/index.less'
+export default {
+  name: 'kButton'
+}
 </script>
+

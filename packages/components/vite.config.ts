@@ -12,39 +12,42 @@ export default defineConfig({
     // 打包文件目录
     outDir: 'es',
     // 压缩
-    minify: false,
+    minify: true,
     // css 分离
     // CSSCodeSplit: true,
     rollupOptions: {
       // 忽略打包 vue 文件
       // external: ['vue'],
       //忽略打包vue文件
-      external: ['vue', /\.less/, '@kitty-ui/utils'],
+      external: ['vue', /\.less/, '@hs312720804/kitty-ui-hs-utils'],
       input: ['index.ts'],
       output: [{
         format: 'es',
         // 不用打包成 .es.js, 这里我们想把它打包成 .js
-        entryFileNames: '[name].js',
+        entryFileNames: '[name].mjs',
         // 让打包目录和我们目录对应
         preserveModules: true,
         // 配置打包根目录
-        // dir: 'lib',
+        // dir: 'es',
+        exports: 'named',
         dir: resolve(__dirname, './dist/es'),
-        preserveModulesRoot: 'src'
+        // preserveModulesRoot: 'src'
       }, {
         format: 'cjs',
         entryFileNames: '[name].js',
         // 让打包目录和我们目录相对应
         preserveModules: true,
         // 配置打包根目录
-        // dir: 'es',
+        exports: 'named',
+        // dir: 'lib',
         dir: resolve(__dirname, './dist/lib'),
-        preserveModulesRoot: 'src'
+        // preserveModulesRoot: 'src'
       }]
     },
     lib: {
       entry: './index.ts',
-      formats: ['es', 'cjs']
+      // formats: ['es', 'cjs']
+      name: 'kitty'
     }
   },
   plugins: [
@@ -61,7 +64,7 @@ export default defineConfig({
     // }),
     dts({
       entryRoot: 'src',
-      outputDir: [resolve(__dirname, './dist/es'), resolve(__dirname, './dist/lib')],
+      outputDir: [resolve(__dirname, './dist/es/src'), resolve(__dirname, './dist/lib/src')],
       //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: '../../tsconfig.json'
     })

@@ -24,15 +24,15 @@ importers:
 
   examples:
     specifiers:
-      kitty-ui-hs: workspace:^1.0.0
+      kitty-ui-hs: workspace:^1.0.3
     dependencies:
       kitty-ui-hs: link:../packages/components
 
   packages/components:
     specifiers:
-      '@kitty-ui-hs/utils': workspace:^1.0.0
+      '@hs312720804/kitty-ui-hs-utils': workspace:^1.0.0
     dependencies:
-      '@kitty-ui-hs/utils': link:../utils
+      '@hs312720804/kitty-ui-hs-utils': link:../utils
 
 packages:
 

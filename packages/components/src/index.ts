@@ -4,4 +4,4 @@ export {
   Button
 }
 
-export default Button
+export default [Button]
