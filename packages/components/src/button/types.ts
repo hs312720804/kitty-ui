@@ -4,7 +4,7 @@ export const ButtonType = ['default', 'primary', 'success', 'warning', 'danger']
 
 export const ButtonSize = ['large', 'normal', 'small', 'mini']
 
-export const ButtonProps = {
+export const buttonProps = {
   type: {
     type: String,
     value: ButtonType
@@ -12,8 +12,11 @@ export const ButtonProps = {
   size: {
     type: String,
     value: ButtonSize
-  }
+  },
+  plain: Boolean,
+  round: Boolean,
+  disabled: Boolean
 }
 
 
-export type ButtonProps = ExtractPropTypes<typeof ButtonProps>
+export type ButtonProps = ExtractPropTypes<typeof buttonProps>
