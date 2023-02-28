@@ -55,7 +55,7 @@ importers:
 
   packages/components:
     specifiers:
-      '@hs312720804/kitty-ui-hs-utils': workspace:^1.0.1
+      '@hs312720804/kitty-ui-hs-utils': workspace:^1.0.2
     dependencies:
       '@hs312720804/kitty-ui-hs-utils': link:../utils
 

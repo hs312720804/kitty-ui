@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:kitty": "gulp -f packages/components/script/build/gulpfile.ts",
-    "publish:kitty1": "gulp -f packages/components/script/publish/gulpfile.ts",
-    "publish:kitty": "gulp -f packages/components/script/publish/index.ts"
+    "publish:kitty": "gulp -f packages/components/script/publish/gulpfile.ts",
+    "publish:kitty1": "gulp -f packages/components/script/publish/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -35,5 +35,9 @@
   },
   "dependencies": {
     "@release-it/conventional-changelog": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hs312720804/kitty-ui.git"
   }
 }

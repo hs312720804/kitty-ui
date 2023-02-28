@@ -1,8 +1,18 @@
-import run from "../utils/run";
-import { pkgPath } from "../utils/paths";
-import { series } from "gulp";
-console.log('series=--->', series)
-export const publishComponent = async () => {
-  run("release-it", `${pkgPath}/components`);
+import { componentPath, pkgPath } from '../utils/paths'
+import run from '../utils/run'
+import { src, dest } from 'gulp'
+//复制
+const copypackage = async () => {
+    return src(`${componentPath}/transitpkg/**`).pipe(dest(`${componentPath}/dist/`));
 };
-export default series(async () => publishComponent());
+//发布组件
+export const publish = async () => {
+    //先给transitpkg升个版本
+    await run('pnpm version patch', `${componentPath}/transitpkg`)
+    //复制到dist目录
+    await copypackage()
+    //在dist下执行发布命令
+    await run('npm publish --access=public', `${componentPath}/dist`)
+    // run('pnpm publish')
+
+}

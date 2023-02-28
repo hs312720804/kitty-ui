@@ -23,6 +23,10 @@
   "license": "MIT",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "@hs312720804/kitty-ui-hs-utils": "workspace:^1.0.1"
+    "@hs312720804/kitty-ui-hs-utils": "workspace:^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hs312720804/kitty-ui.git"
   }
 }

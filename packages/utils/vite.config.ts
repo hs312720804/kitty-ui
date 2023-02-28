@@ -30,7 +30,7 @@ export default defineConfig({
         // 配置打包根目录
         // dir: 'lib',
         dir: resolve(__dirname, './dist/es'),
-        preserveModulesRoot: 'src'
+        // preserveModulesRoot: 'src'
       }, {
         format: 'cjs',
         entryFileNames: '[name].js',
@@ -39,12 +39,12 @@ export default defineConfig({
         // 配置打包根目录
         // dir: 'es',
         dir: resolve(__dirname, './dist/lib'),
-        preserveModulesRoot: 'src'
+        // preserveModulesRoot: 'src'
       }]
     },
     lib: {
       entry: './index.ts',
-      formats: ['es', 'cjs']
+      // formats: ['es', 'cjs']
     }
   },
   plugins: [
@@ -60,7 +60,7 @@ export default defineConfig({
     //   tsConfigFilePath: '../../tsconfig.json'
     // }),
     dts({
-      entryRoot: 'src',
+      // entryRoot: 'src',
       outputDir: [resolve(__dirname, './dist/es'), resolve(__dirname, './dist/lib')],
       //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: '../../tsconfig.json'

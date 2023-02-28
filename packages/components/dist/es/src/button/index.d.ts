@@ -1,4 +1,4 @@
-declare const Button: import("@hs312720804/kitty-ui-hs-utils/withInstall").SFCWithInstall<import("vue").DefineComponent<{
+declare const Button: import("@hs312720804/kitty-ui-hs-utils/dist/lib/withInstall").SFCWithInstall<import("vue").DefineComponent<{
     type: {
         type: StringConstructor;
         value: string[];

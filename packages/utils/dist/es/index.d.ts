@@ -1,4 +1,3 @@
-import type { Plugin } from 'vue';
-export type SFCWithInstall<T> = T & Plugin;
-declare const _default: <T>(comp: T) => SFCWithInstall<T>;
-export default _default;
+import withInstall from './withInstall';
+declare const testfunc: (x: number, y: number) => number;
+export { withInstall, testfunc };
