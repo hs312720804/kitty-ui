@@ -1,11 +1,11 @@
 <!-- button.vue -->
 <template>
   <button class="k-button" :class="styleClass">
-      <!-- <Icon v-if="iconFont.iconName && iconFont.position != 'right'" :name="iconFont.iconName" /> -->
-      <span class="k-button-text" v-if="slots.default">
-          <slot />
-      </span>
-      <!-- <Icon v-if="iconFont.position == 'right' && iconFont.iconName" :name="iconFont.iconName" /> -->
+    <!-- <Icon v-if="iconFont.iconName && iconFont.position != 'right'" :name="iconFont.iconName" /> -->
+    <span class="k-button-text" v-if="slots.default">
+      <slot />
+    </span>
+    <!-- <Icon v-if="iconFont.position == 'right' && iconFont.iconName" :name="iconFont.iconName" /> -->
   </button>
 </template>
 

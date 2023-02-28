@@ -1,6 +1,6 @@
 {
   "name": "@hs312720804/kitty-ui-hs-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./index.ts",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "vite build"
   },
   "files": [
-    "dist"
+    "dist/es",
+    "dist/lib"
   ],
   "keywords": [],
   "author": "",

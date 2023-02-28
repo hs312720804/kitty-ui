@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "kitty-ui-hs": "workspace:^1.0.3"
+    "kitty-ui-hs": "workspace:^1.0.12"
   }
 }

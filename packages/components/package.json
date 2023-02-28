@@ -1,21 +1,27 @@
 {
   "name": "kitty-ui-hs",
-  "version": "1.0.3",
+  "version": "1.0.14",
   "description": "",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "build": "vite build & esno script/build/buildLess",
+    "build:less": "esno script/build/buildLess"
   },
   "files": [
-    "dist/lib",
-    "dist/es"
+    "es",
+    "lib"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "kitty-ui-hs",
+    "vue3 组件库",
+    "dist"
+  ],
+  "author": "hs",
   "license": "MIT",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "@hs312720804/kitty-ui-hs-utils": "workspace:^1.0.0"
+    "@hs312720804/kitty-ui-hs-utils": "workspace:^1.0.1"
   }
 }
