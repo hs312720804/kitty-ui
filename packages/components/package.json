@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build & esno script/build/buildLess",
-    "build:less": "esno script/build/buildLess"
+    "build:less": "esno script/build/buildLess",
+    "release": "release-it"
   },
   "files": [
     "es",
