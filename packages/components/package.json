@@ -1,9 +1,8 @@
 {
   "name": "kitty-ui-hs",
-  "version": "1.0.14",
+  "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
-  "module": "es/index.mjs",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build & esno script/build/buildLess",

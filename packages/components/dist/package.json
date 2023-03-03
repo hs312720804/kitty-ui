@@ -1,6 +1,6 @@
 {
   "name": "kitty-ui-hs",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "lib/index.js",
   "module": "es/index.mjs",
   "files": [
@@ -17,5 +17,9 @@
   "author": "hs",
   "license": "MIT",
   "description": "",
-  "typings": "lib/index.d.ts"
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hs312720804/kitty-ui.git"
+  }
 }
